@@ -27,26 +27,37 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rZL-ex-1tN">
-                                                    <rect key="frame" x="10" y="7" width="126" height="142"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rZL-ex-1tN">
+                                                    <rect key="frame" x="6" y="7" width="126" height="142"/>
                                                     <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQN-v3-JeX">
-                                                    <rect key="frame" x="141" y="11" width="265" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQN-v3-JeX">
+                                                    <rect key="frame" x="137" y="11" width="107" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.92099208047945202" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Synopsis" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="674-iP-r0r">
-                                                    <rect key="frame" x="144" y="49" width="262" height="70"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Synopsis" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="674-iP-r0r">
+                                                    <rect key="frame" x="140" y="43" width="266" height="106"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="106" id="S7x-3b-b9m"/>
+                                                        <constraint firstAttribute="width" constant="266" id="VOP-Xc-vTw"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rZL-ex-1tN" firstAttribute="leading" secondItem="jZx-co-Zzv" secondAttribute="leading" constant="6" id="GV7-hN-q2L"/>
+                                                <constraint firstItem="674-iP-r0r" firstAttribute="leading" secondItem="rZL-ex-1tN" secondAttribute="trailing" constant="8" id="GhT-d2-zaH"/>
+                                                <constraint firstItem="674-iP-r0r" firstAttribute="leading" secondItem="jZx-co-Zzv" secondAttribute="leading" constant="140" id="HEh-IF-15X"/>
+                                                <constraint firstAttribute="bottom" secondItem="rZL-ex-1tN" secondAttribute="bottom" constant="11" id="SiU-2O-VK0"/>
+                                                <constraint firstItem="WQN-v3-JeX" firstAttribute="top" secondItem="jZx-co-Zzv" secondAttribute="topMargin" id="b61-oC-0hP"/>
+                                                <constraint firstItem="WQN-v3-JeX" firstAttribute="leading" secondItem="rZL-ex-1tN" secondAttribute="trailing" constant="5" id="fra-p3-L4K"/>
+                                                <constraint firstItem="rZL-ex-1tN" firstAttribute="top" secondItem="jZx-co-Zzv" secondAttribute="top" constant="7" id="nLa-pN-pfC"/>
+                                                <constraint firstItem="674-iP-r0r" firstAttribute="bottom" secondItem="rZL-ex-1tN" secondAttribute="bottom" id="ysf-Le-NLV"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="0.52089576198630139" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
