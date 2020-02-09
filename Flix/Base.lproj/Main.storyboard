@@ -64,6 +64,7 @@
                                             <outlet property="posterView" destination="rZL-ex-1tN" id="n2Z-Bq-zhv"/>
                                             <outlet property="synopsisLabel" destination="674-iP-r0r" id="GIY-NY-hDh"/>
                                             <outlet property="titleLabel" destination="WQN-v3-JeX" id="VU6-hR-GIk"/>
+                                            <segue destination="fwQ-sy-ZjH" kind="show" id="kL3-h2-xT0"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -98,6 +99,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJN-N1-id8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="lN5-cK-Of5">
+            <objects>
+                <viewController id="fwQ-sy-ZjH" customClass="MovieDetailsViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yo3-f0-nnB" customClass="MovieDetails">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="raf-tb-lpG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dvs-KW-eC3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBd-7I-U90" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="104"/>
         </scene>
     </scenes>
 </document>

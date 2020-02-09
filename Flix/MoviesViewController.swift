@@ -66,18 +66,32 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        print("Loading up details")
+        
+        //Find selected movie
+        let cell = sender as! UITableViewCell//The sender is what brings data over from a specific view, set default as "Any?" is func declaration
+        let indexPath = tableView.indexPath(for: cell)!//Defines the location of an item inside a tableview
+        let movie = movies[indexPath.row]//The defines a movie as one of the movies in the tableview based on its value from indexPath
+        
+        //Pass movie to views
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie//Helps pass the data of the movie selected into "movie"
+        
+        //tableView.deselectRow(at: indexPath, animated: true)//Upon return from the push navigation, deselects the last cell; I prefer leaving it selected as it marks what was last clicked
     }
-    */
 
 }
 /*
  For anything related to UI interface, such as the view controllers and table cells, create a Coca file. Swift is for programming, and SwiftUI is for views.
  Cells will go in there own file since they can be repeated. The table goes into the view controller.
+ */
+/*
+ Push navigation - slides screen from left to right, with back option on top
+ Tab bar - a menu on the screen to switch view controllers
  */
