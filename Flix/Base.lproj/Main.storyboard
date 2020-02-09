@@ -139,11 +139,28 @@
                     <navigationItem key="navigationItem" title="Superhero" id="ueR-YS-E5n"/>
                     <connections>
                         <outlet property="collectionView" destination="9P5-7e-cc6" id="qum-bb-q7C"/>
+                        <segue destination="6KK-5q-aL9" kind="show" id="vxt-UC-qAf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="67O-1Y-ObH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="986.95652173913049" y="-658.25892857142856"/>
+        </scene>
+        <!--Superhero View Controller-->
+        <scene sceneID="6XT-af-kM3">
+            <objects>
+                <viewController id="6KK-5q-aL9" customClass="SuperheroViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ipj-56-djo" customClass="SuperheroViewCon">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yhk-ki-zwr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JcI-kO-Ya9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDp-Tf-rnm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786" y="-658"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="riI-01-BeQ">
@@ -180,7 +197,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Synopsis" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmK-jO-0iX">
-                                <rect key="frame" x="37" y="550" width="341" height="312"/>
+                                <rect key="frame" x="37" y="550" width="341" height="263"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
