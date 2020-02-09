@@ -54,6 +54,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let title = movie["title"] as! String//Casts the dictionary key "title" as a String, calling the key's value into a String
         let synopsis = movie["overview"] as! String
         cell.titleLabel!.text = title//Displays the row number, represented by indexPath.row
+        cell.titleLabel.sizeToFit()
         cell.synopsisLabel!.text = synopsis
         
         let baseURL = "https://image.tmdb.org/t/p/w185"//Under Images in movie database
