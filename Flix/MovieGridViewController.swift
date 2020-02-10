@@ -64,14 +64,24 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
+                // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        print("Loading up details")
+        
+        //Find selected movie
+        let cell = sender as! UICollectionViewCell//The sender is what brings data over from a specific view, set default as "Any?" is func declaration
+        let indexPath = collectionView.indexPath(for: cell)!//Defines the location of an item inside a tableview
+        let movie = movies[indexPath.row]//The defines a movie as one of the movies in the tableview based on its value from indexPath
+        
+        //Pass movie to views
+        let superheroViewController = segue.destination as! SuperheroViewController
+        superheroViewController.movie = movie//Helps pass the data of the movie selected into "movie"
+        
+        //tableView.deselectRow(at: indexPath, animated: true)//Upon return from the push navigation, deselects the last cell; I prefer leaving it selected as it marks what was last clicked
     }
-    */
 
 }
