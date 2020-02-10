@@ -13,7 +13,7 @@
 ### App Walkthough GIF
 `TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
 
-<img src="http://recordit.co/3eQLTTjb1c" width=250><br>
+<img src="https://recordit.co/3eQLTTjb1c.gif" width=250><br>
 
 ### Notes
 Recreating the TableView push navigation with the CollectionView was tough to refollow, but important to redo to remind myself how it works. Also, the sizes of the images in the CollectionView cells are improperly sized.
